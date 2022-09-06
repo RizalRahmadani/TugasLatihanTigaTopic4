@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/purple_700"
+        android:textSize="40dp"
+        android:text="LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/loginUsername"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_width="350dp"
+        android:layout_height="60dp"/>
+    <EditText
+        android:textColor="@color/black"
+        android:layout_marginTop="3dp"
+        android:textSize="20dp"
+        android:hint="Password"
+        android:id="@+id/loginPasword"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"/>
+    <Button
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/purple_700"
+            android:id="@+id/textLupaPassword"
+            android:textSize="20dp"
+            android:text="Lupa password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/purple_700"
+            android:layout_alignParentRight="true"
+            android:id="@+id/textRegister"
+            android:textSize="20dp"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:backgroundTint="@color/purple_500"
+                android:id="@+id/btnChats"
+                android:background="@drawable/ic_chats"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:backgroundTint="@color/purple_500"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btnBantuan"
+                android:background="@drawable/ic_bantuan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
